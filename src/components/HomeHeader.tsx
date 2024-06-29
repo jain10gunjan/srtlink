@@ -1,10 +1,10 @@
 export default function HomeHeader(){
     return (
         <>
-<div className="bg-neutral-900">
+<div className="">
   <div className="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
-    <h1 className="font-semibold text-white text-5xl md:text-6xl">
-      <span className="text-[#ff0] ">Shorten your links:</span> share your story. Simplify sharing, maximize impact.
+    <h1 className="font-semibold text-5xl md:text-6xl">
+      <span className="text-blue-700 ">Shorten your links:</span> share your story. Simplify sharing, maximize impact.
     </h1>
     <div className="max-w-4xl">
       <p className="mt-5 text-neutral-400 text-lg">
@@ -14,7 +14,7 @@ export default function HomeHeader(){
   </div>
 </div>
 
-<div className="relative overflow-hidden pt-4 bg-neutral-900">
+<div className="relative overflow-hidden pt-4">
   <svg className="absolute -bottom-20 start-1/2 w-[1900px] transform -translate-x-1/2" width="2745" height="488" viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0.5 330.864C232.505 403.801 853.749 527.683 1482.69 439.719C2111.63 351.756 2585.54 434.588 2743.87 487" className="stroke-neutral-700/50" stroke="currentColor"/>
     <path d="M0.5 308.873C232.505 381.81 853.749 505.692 1482.69 417.728C2111.63 329.765 2585.54 412.597 2743.87 465.009" className="stroke-neutral-700/50" stroke="currentColor"/>
