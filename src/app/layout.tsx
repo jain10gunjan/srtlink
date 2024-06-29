@@ -5,11 +5,18 @@ import Navbar from "@/components/Navbar";
 import Head from 'next/head'
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
+interface ExtendedMetadata extends Metadata {
+  name: string;
+  content:string;
+}
+export const metadata: ExtendedMetadata = {
   title: "SrtLink",
   description: "A Casual but Trustable Short Link on the Internet.",
+  name:"monetag",
+  content:"56933abcf7d0bdacbd68d2e0399eb34f"
 };
+
+ 
 
 
 
@@ -21,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <meta name="monetag" content="56933abcf7d0bdacbd68d2e0399eb34f" />
+      <meta name="monetag" content="56933abcf7d0bdacbd68d2e0399eb34f" />
       </Head>
       <body className={inter.className}>
         <Navbar />
