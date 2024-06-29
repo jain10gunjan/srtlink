@@ -4,11 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Script from "next/script";
 import Footer from "@/components/Footer";
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("G-T2WWFMF74D");
-
-ReactGA.send({ hitType: "pageview"});
 
 const inter = Inter({ subsets: ["latin"] });
 

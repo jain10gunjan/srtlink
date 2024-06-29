@@ -1,10 +1,19 @@
 "use client"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Banner from './Banner';
+import ReactGA from "react-ga4";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const TRACKING_ID = 'G-T2WWFMF74D';
+  
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    // Send an initial pageview
+    ReactGA.send("pageview");
+    console.log('Sending the google analytics data');
+  
+  }, []);
   return (
     <>
     <header className="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
