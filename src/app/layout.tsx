@@ -11,9 +11,7 @@ export const metadata: Metadata = {
   description: "A Casual but Trustable Short Link on the Internet.",
 };
 
-<Head>
-  <meta name="monetag" content="56933abcf7d0bdacbd68d2e0399eb34f" />
-</Head>
+
 
 export default function RootLayout({
   children,
@@ -22,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="monetag" content="56933abcf7d0bdacbd68d2e0399eb34f" />
+      </Head>
       <body className={inter.className}>
         <Navbar />
         {children}</body>
