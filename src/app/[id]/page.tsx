@@ -59,11 +59,12 @@ export default function JobByID() {
         const textToCopy = `${job?.sharetext}
 Company Name: ${job?.companyName}
 Title: ${job?.title}
+Experience: ${job?.experience}
 Type: ${job?.type}
 Category: ${job?.category}
 Location: ${job?.companyLocation}
 Salary: ${job?.salary}
-Apply Link: ${job?.link}`;
+Apply Link: https://srtlink.online/${job?._id}`;
 
         navigator.clipboard.writeText(textToCopy)
             .then(() => {
