@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <Script src="https://alwingulla.com/88/tag.min.js" data-zone="75757" async data-cfasync="false"/> */}
+      <Script src="https://alwingulla.com/88/tag.min.js" data-zone="75757" async data-cfasync="false"/>
       <body className={inter.className}>
         <Navbar />
         {children}
